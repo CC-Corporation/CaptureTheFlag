@@ -1,0 +1,55 @@
+name: CaptureTheFlag
+version: 1.5
+authors: [Dr__Dirty, CPU]
+main: de.flag.main.Main
+softdepend: [Multiverse-Core]
+
+commands:
+   setloc:
+      description: setze eine Location!
+      aliases: setlocation
+   start:
+      description: startet das Spiel!
+   setspawner:
+      description: setze einen Gold-/Eisenspawner
+   registerworld:
+      description: registriere eine Welt!
+   setlobbyspawn: 
+      description: setze den Spawnpunkt in der Lobby!
+      aliases: setlobby
+   map:
+      description: aendere die map!
+   resetmap: 
+      description: resete die map!
+   gm:
+      description: veraendert deinen GameMode!
+   setpoints:
+      description: setze die Punkte eines Teams!
+   setcoins:
+      description: setze die Anzahl deiner Coins!
+   ping:
+      description: Zeigt deinen Ping an!
+   cancel:
+      description: bricht den Countdown ab!
+   setmaxplayers:
+      description: setze die maximale Spieler Anzahl!
+   deaths:
+      description: zeigt die Anzahl deiner Tode an!
+      aliases: seedeaths
+      
+permissions:
+   ctf:
+     children:
+       ctf.cancel: true
+       ctf.gm: true
+       ctf.selectmap: true
+       ctf.registerworld: true
+       ctf.setlobby: true
+       ctf.setlocation: true
+       ctf.setcoins: true
+       ctf.setspawner: true
+       ctf.maxplayers: true
+       ctf.setspawner: true
+       ctf.setpoints: true
+       ctf.start: true
+       ctf.resetmap: true
